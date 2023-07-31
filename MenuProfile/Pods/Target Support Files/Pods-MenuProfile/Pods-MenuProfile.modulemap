@@ -1,0 +1,6 @@
+framework module Pods_MenuProfile {
+  umbrella header "Pods-MenuProfile-umbrella.h"
+
+  export *
+  module * { export * }
+}

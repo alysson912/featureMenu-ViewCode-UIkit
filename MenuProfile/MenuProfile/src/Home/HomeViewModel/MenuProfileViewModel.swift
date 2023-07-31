@@ -7,7 +7,23 @@
 
 import UIKit
 
+enum TypeFetch {
+    case mock
+    case request
+}
+
 class MenuProfileViewModel {
 
-    //let service: 
+  private let service: MenuProfileService = MenuProfileService()
+    
+    public func fetch(_ typeFetch: TypeFetch){
+        switch typeFetch {
+        case .mock:
+            self.service.getMenuFromJson { success, error in
+                print(success)
+            }
+        case .request:
+            break
+        }
+    }
 }

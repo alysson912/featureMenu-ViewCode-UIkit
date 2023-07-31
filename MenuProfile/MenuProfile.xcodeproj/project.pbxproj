@@ -13,9 +13,12 @@
 		38DC6DC22A781A40002E89D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38DC6DC12A781A40002E89D5 /* Assets.xcassets */; };
 		38DC6DC52A781A40002E89D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38DC6DC32A781A40002E89D5 /* LaunchScreen.storyboard */; };
 		38DC6DD02A781B2A002E89D5 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DC6DCF2A781B2A002E89D5 /* HomeScreen.swift */; };
-		38DC6DD32A781E1E002E89D5 /* menurofile.json in Resources */ = {isa = PBXBuildFile; fileRef = 38DC6DD22A781E1E002E89D5 /* menurofile.json */; };
+		38DC6DD32A781E1E002E89D5 /* menuProfile.json in Resources */ = {isa = PBXBuildFile; fileRef = 38DC6DD22A781E1E002E89D5 /* menuProfile.json */; };
 		38DC6DD62A7823D4002E89D5 /* MenuProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DC6DD52A7823D4002E89D5 /* MenuProfile.swift */; };
 		38DC6DD92A7826BF002E89D5 /* MenuProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DC6DD82A7826BF002E89D5 /* MenuProfileViewModel.swift */; };
+		38DC6DDC2A7829E8002E89D5 /* MenuProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DC6DDB2A7829E8002E89D5 /* MenuProfileService.swift */; };
+		38DC6DDE2A782DE2002E89D5 /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DC6DDD2A782DE2002E89D5 /* GenericService.swift */; };
+		4DAA6027AB4A7290B5B373B6 /* Pods_MenuProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE19C8FF46DB7664A02788D /* Pods_MenuProfile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +30,14 @@
 		38DC6DC42A781A40002E89D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38DC6DC62A781A40002E89D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38DC6DCF2A781B2A002E89D5 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		38DC6DD22A781E1E002E89D5 /* menurofile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menurofile.json; sourceTree = "<group>"; };
+		38DC6DD22A781E1E002E89D5 /* menuProfile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menuProfile.json; sourceTree = "<group>"; };
 		38DC6DD52A7823D4002E89D5 /* MenuProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProfile.swift; sourceTree = "<group>"; };
 		38DC6DD82A7826BF002E89D5 /* MenuProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProfileViewModel.swift; sourceTree = "<group>"; };
+		38DC6DDB2A7829E8002E89D5 /* MenuProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProfileService.swift; sourceTree = "<group>"; };
+		38DC6DDD2A782DE2002E89D5 /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
+		55C16413D388EE02022A9438 /* Pods-MenuProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuProfile.release.xcconfig"; path = "Target Support Files/Pods-MenuProfile/Pods-MenuProfile.release.xcconfig"; sourceTree = "<group>"; };
+		ACE19C8FF46DB7664A02788D /* Pods_MenuProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA97491E0E3682C802FC29A /* Pods-MenuProfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuProfile.debug.xcconfig"; path = "Target Support Files/Pods-MenuProfile/Pods-MenuProfile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DAA6027AB4A7290B5B373B6 /* Pods_MenuProfile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +57,8 @@
 			children = (
 				38DC6DB72A781A3E002E89D5 /* MenuProfile */,
 				38DC6DB62A781A3E002E89D5 /* Products */,
+				39354086ADA3F206A387F9D0 /* Pods */,
+				F922813495DD4DD3B7FB1A52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +84,7 @@
 		38DC6DCC2A781AF7002E89D5 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				38DC6DDA2A7829D3002E89D5 /* Service */,
 				38DC6DD12A781DF9002E89D5 /* JSON */,
 				38DC6DB82A781A3E002E89D5 /* AppDelegate.swift */,
 				38DC6DBA2A781A3E002E89D5 /* SceneDelegate.swift */,
@@ -103,7 +115,7 @@
 		38DC6DD12A781DF9002E89D5 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				38DC6DD22A781E1E002E89D5 /* menurofile.json */,
+				38DC6DD22A781E1E002E89D5 /* menuProfile.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -124,6 +136,33 @@
 			path = HomeViewModel;
 			sourceTree = "<group>";
 		};
+		38DC6DDA2A7829D3002E89D5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				38DC6DDB2A7829E8002E89D5 /* MenuProfileService.swift */,
+				38DC6DDD2A782DE2002E89D5 /* GenericService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		39354086ADA3F206A387F9D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDA97491E0E3682C802FC29A /* Pods-MenuProfile.debug.xcconfig */,
+				55C16413D388EE02022A9438 /* Pods-MenuProfile.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F922813495DD4DD3B7FB1A52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACE19C8FF46DB7664A02788D /* Pods_MenuProfile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38DC6DC92A781A40002E89D5 /* Build configuration list for PBXNativeTarget "MenuProfile" */;
 			buildPhases = (
+				656BB6092228C6162E8132AD /* [CP] Check Pods Manifest.lock */,
 				38DC6DB12A781A3E002E89D5 /* Sources */,
 				38DC6DB22A781A3E002E89D5 /* Frameworks */,
 				38DC6DB32A781A3E002E89D5 /* Resources */,
+				46ABB82A6370EC319FFFF856 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,22 +224,66 @@
 			buildActionMask = 2147483647;
 			files = (
 				38DC6DC52A781A40002E89D5 /* LaunchScreen.storyboard in Resources */,
-				38DC6DD32A781E1E002E89D5 /* menurofile.json in Resources */,
+				38DC6DD32A781E1E002E89D5 /* menuProfile.json in Resources */,
 				38DC6DC22A781A40002E89D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46ABB82A6370EC319FFFF856 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MenuProfile/Pods-MenuProfile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MenuProfile/Pods-MenuProfile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MenuProfile/Pods-MenuProfile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		656BB6092228C6162E8132AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MenuProfile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38DC6DB12A781A3E002E89D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38DC6DDC2A7829E8002E89D5 /* MenuProfileService.swift in Sources */,
 				38DC6DD02A781B2A002E89D5 /* HomeScreen.swift in Sources */,
 				38DC6DBD2A781A3E002E89D5 /* HomeVC.swift in Sources */,
 				38DC6DB92A781A3E002E89D5 /* AppDelegate.swift in Sources */,
 				38DC6DD92A7826BF002E89D5 /* MenuProfileViewModel.swift in Sources */,
+				38DC6DDE2A782DE2002E89D5 /* GenericService.swift in Sources */,
 				38DC6DBB2A781A3E002E89D5 /* SceneDelegate.swift in Sources */,
 				38DC6DD62A7823D4002E89D5 /* MenuProfile.swift in Sources */,
 			);
@@ -334,6 +419,7 @@
 		};
 		38DC6DCA2A781A40002E89D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA97491E0E3682C802FC29A /* Pods-MenuProfile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -365,6 +451,7 @@
 		};
 		38DC6DCB2A781A40002E89D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C16413D388EE02022A9438 /* Pods-MenuProfile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
