@@ -13,6 +13,7 @@
 		38DC6DC22A781A40002E89D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38DC6DC12A781A40002E89D5 /* Assets.xcassets */; };
 		38DC6DC52A781A40002E89D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38DC6DC32A781A40002E89D5 /* LaunchScreen.storyboard */; };
 		38DC6DD02A781B2A002E89D5 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DC6DCF2A781B2A002E89D5 /* HomeScreen.swift */; };
+		38DC6DD32A781E1E002E89D5 /* menurofile.json in Resources */ = {isa = PBXBuildFile; fileRef = 38DC6DD22A781E1E002E89D5 /* menurofile.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		38DC6DC42A781A40002E89D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38DC6DC62A781A40002E89D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38DC6DCF2A781B2A002E89D5 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		38DC6DD22A781E1E002E89D5 /* menurofile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menurofile.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		38DC6DCC2A781AF7002E89D5 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				38DC6DD12A781DF9002E89D5 /* JSON */,
 				38DC6DB82A781A3E002E89D5 /* AppDelegate.swift */,
 				38DC6DBA2A781A3E002E89D5 /* SceneDelegate.swift */,
 				38DC6DCD2A781B0D002E89D5 /* Home */,
@@ -89,6 +92,14 @@
 				38DC6DCF2A781B2A002E89D5 /* HomeScreen.swift */,
 			);
 			path = screen;
+			sourceTree = "<group>";
+		};
+		38DC6DD12A781DF9002E89D5 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				38DC6DD22A781E1E002E89D5 /* menurofile.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38DC6DC52A781A40002E89D5 /* LaunchScreen.storyboard in Resources */,
+				38DC6DD32A781E1E002E89D5 /* menurofile.json in Resources */,
 				38DC6DC22A781A40002E89D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

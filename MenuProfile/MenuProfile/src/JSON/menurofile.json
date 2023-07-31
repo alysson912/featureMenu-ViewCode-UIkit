@@ -1,0 +1,82 @@
+{
+    "group":[
+        {
+            "title":"Me ajuda",
+            "child":[
+                {
+                    "title":"Saiba mais sobre a tela inicial"
+                },
+                {
+                    "title":"Saiba mais sobre o Pix"
+                },
+                {
+                    "title":"Como registrar a chave Pix?"
+                },
+                
+                {
+                    "title":"Por que o Pix não apareceu no meu aplicativo?"
+                }
+            ]
+        },
+        {
+            "title": "Meus Dados",
+            "child": [
+                {
+                    "title": "Nome de Preferência"
+                },
+                {
+                    "title": "E-mail"
+                },
+                { "title": "Telefone"
+                },
+                {
+                    "title": "Endereço"
+                },
+                {
+                    "title": "Renda Mensal"
+                }
+            ]
+        },
+        {
+            "title": "Configurar app",
+            "child": [
+                {
+                    "title": "Busca inteligente"
+                },
+                {
+                    "title": "Marcar vencimento no calendário"
+                },
+                {
+                    "title": "Configurar telefone"
+                }
+            ]
+        },
+        {
+            "title": "Configurar Cartão",
+            "child": [
+                {
+                    "title": "Vencimento"
+                },
+                {
+                    "title": "Ajustar limite"
+                },
+                {
+                    "title": "Informações sobre juros"
+                },
+                {
+                    "title": "Débito automático na fatura"
+                },
+                {
+                    "title": "Aviso aiagem"
+                },
+                {
+                    "title":"Compras por aproximação"
+                },
+                {
+                    "title": "Apple Pay"
+                }
+            ]
+        }
+    ]
+}
+
