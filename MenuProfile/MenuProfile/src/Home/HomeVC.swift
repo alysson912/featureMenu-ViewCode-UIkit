@@ -23,7 +23,7 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.fetch(.mock)
+        viewModel.fetch(.request)
     }
 
 

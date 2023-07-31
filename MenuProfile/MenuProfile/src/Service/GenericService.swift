@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 protocol GenericService: AnyObject {
     typealias completion <T> = (_ result: T, _ failure: Error?) -> Void
@@ -14,5 +15,6 @@ protocol GenericService: AnyObject {
 enum Error: Swift.Error {
     case fileNotFound(name: String, Swift.Error)
     case fileDecodingFailed(name: String, Swift.Error)
+    case errorRequest(AFError)
 }
  
