@@ -52,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38776EC82A785B6D00397C88 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				38DC6DBC2A781A3E002E89D5 /* HomeVC.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
 		38DC6DAC2A781A3E002E89D5 = {
 			isa = PBXGroup;
 			children = (
@@ -96,20 +104,20 @@
 		38DC6DCD2A781B0D002E89D5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				38DC6DD72A7826A4002E89D5 /* HomeViewModel */,
 				38DC6DD42A7823C5002E89D5 /* Model */,
-				38DC6DCE2A781B19002E89D5 /* screen */,
-				38DC6DBC2A781A3E002E89D5 /* HomeVC.swift */,
+				38DC6DD72A7826A4002E89D5 /* HomeViewModel */,
+				38DC6DCE2A781B19002E89D5 /* HomeScreen */,
+				38776EC82A785B6D00397C88 /* HomeVC */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		38DC6DCE2A781B19002E89D5 /* screen */ = {
+		38DC6DCE2A781B19002E89D5 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
 				38DC6DCF2A781B2A002E89D5 /* HomeScreen.swift */,
 			);
-			path = screen;
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 		38DC6DD12A781DF9002E89D5 /* JSON */ = {
@@ -151,7 +159,6 @@
 				DDA97491E0E3682C802FC29A /* Pods-MenuProfile.debug.xcconfig */,
 				55C16413D388EE02022A9438 /* Pods-MenuProfile.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
