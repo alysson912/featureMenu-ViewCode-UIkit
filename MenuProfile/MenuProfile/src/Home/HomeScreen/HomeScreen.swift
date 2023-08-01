@@ -42,7 +42,7 @@ class HomeScreen: UIView {
         tableView.separatorStyle = .none // retirando linhas
         tableView.showsVerticalScrollIndicator = false // desativando scrool indicator
         // TO DO: Register
-        tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
+        tableView.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
         // tableView.transform = CGAffineTransform(scaleX: 1, y: -1) // tableView Contraria/ append item de baixo pra cima
         return tableView
     }()
@@ -65,7 +65,7 @@ class HomeScreen: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .white
+        backgroundColor = .cyan
         addViews()
         setupConstraints()
     }

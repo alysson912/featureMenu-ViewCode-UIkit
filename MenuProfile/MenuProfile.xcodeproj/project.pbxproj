@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38776ECB2A799F2800397C88 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38776ECA2A799F2800397C88 /* SectionView.swift */; };
 		38DC6DB92A781A3E002E89D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DC6DB82A781A3E002E89D5 /* AppDelegate.swift */; };
 		38DC6DBB2A781A3E002E89D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DC6DBA2A781A3E002E89D5 /* SceneDelegate.swift */; };
 		38DC6DBD2A781A3E002E89D5 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DC6DBC2A781A3E002E89D5 /* HomeVC.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38776ECA2A799F2800397C88 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		38DC6DB52A781A3E002E89D5 /* MenuProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38DC6DB82A781A3E002E89D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38DC6DBA2A781A3E002E89D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 				38DC6DBC2A781A3E002E89D5 /* HomeVC.swift */,
 			);
 			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		38776EC92A799F0E00397C88 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				38776ECA2A799F2800397C88 /* SectionView.swift */,
+			);
+			path = Section;
 			sourceTree = "<group>";
 		};
 		38DC6DAC2A781A3E002E89D5 = {
@@ -104,6 +114,7 @@
 		38DC6DCD2A781B0D002E89D5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				38776EC92A799F0E00397C88 /* Section */,
 				38DC6DD42A7823C5002E89D5 /* Model */,
 				38DC6DD72A7826A4002E89D5 /* HomeViewModel */,
 				38DC6DCE2A781B19002E89D5 /* HomeScreen */,
@@ -287,6 +298,7 @@
 			files = (
 				38DC6DDC2A7829E8002E89D5 /* MenuProfileService.swift in Sources */,
 				38DC6DD02A781B2A002E89D5 /* HomeScreen.swift in Sources */,
+				38776ECB2A799F2800397C88 /* SectionView.swift in Sources */,
 				38DC6DBD2A781A3E002E89D5 /* HomeVC.swift in Sources */,
 				38DC6DB92A781A3E002E89D5 /* AppDelegate.swift in Sources */,
 				38DC6DD92A7826BF002E89D5 /* MenuProfileViewModel.swift in Sources */,

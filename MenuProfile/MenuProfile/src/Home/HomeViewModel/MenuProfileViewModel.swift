@@ -18,9 +18,12 @@ protocol MenuProfileViewModelDelegate: AnyObject {
 }
 
 class MenuProfileViewModel {
-
-  private let service: MenuProfileService = MenuProfileService()
+    
+    private let service: MenuProfileService = MenuProfileService()
     private weak var delegate: MenuProfileViewModelDelegate?
+    private var data: [MenuProfile] = []
+    private var hiddenSection = Set<Int>()
+    
     
     public func delegate(delegate: MenuProfileViewModelDelegate?){
         self.delegate = delegate
@@ -31,6 +34,7 @@ class MenuProfileViewModel {
         case .mock:
             self.service.getMenuFromJson { success, error in
                 if let success = success {
+                    self.data = success.group ?? []
                     self.delegate?.success()
                 }else {
                     self.delegate?.error(error?.localizedDescription ?? "")
@@ -39,6 +43,7 @@ class MenuProfileViewModel {
         case .request:
             self.service.getMenu { success, error in
                 if let success = success {
+                    self.data = success.group ?? []
                     self.delegate?.success()
                 }else {
                     self.delegate?.error(error?.localizedDescription ?? "")
@@ -47,7 +52,18 @@ class MenuProfileViewModel {
         }
     }
     
+    public var numberOfSections: Int {
+        return data.count
+    }
+    public func titleForSection(section: Int) -> String {
+        return data[section].title ?? ""
+    }
+    
     public var numberOfRowsInSection: Int {
-        return 1
+        return 0
+    }
+    
+    public func containsSection(_ section: Int) -> Bool{
+        return hiddenSection.contains(section)
     }
 }

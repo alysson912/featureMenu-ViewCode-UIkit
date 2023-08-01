@@ -26,7 +26,7 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         viewModel.delegate(delegate: self)
         viewModel.fetch(.request)
-        screen?.configTableView(delegate: self, dataSource: self)
+        
     }
 
 
@@ -34,7 +34,8 @@ class HomeVC: UIViewController {
 
 extension HomeVC: MenuProfileViewModelDelegate {
     func success() {
-        print("deu bom")
+        screen?.configTableView(delegate: self, dataSource: self)
+        screen?.tableView.reloadData()
     }
     
     func error(_ message: String) {
@@ -46,7 +47,7 @@ extension HomeVC: MenuProfileViewModelDelegate {
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return viewModel.numberOfSections
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,7 +55,17 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? { // passa uma view para que ela seja uma setion
-        return nil
+        
+        let view = SectionView()
+        view.referenceButton.addTarget(self, action: #selector(tapSection), for: . touchUpInside)
+        view.referenceButton.tag = section
+        view.setupSection(description: viewModel.titleForSection(section: section))
+        view.expandButton(value: viewModel.containsSection(section))
+        return view
+    }
+    
+    @objc func tapSection(_ sender: UIButton){
+        print(#function)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
