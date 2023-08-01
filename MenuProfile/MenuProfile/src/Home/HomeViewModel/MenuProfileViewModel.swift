@@ -46,4 +46,8 @@ class MenuProfileViewModel {
             }
         }
     }
+    
+    public var numberOfRowsInSection: Int {
+        return 1
+    }
 }

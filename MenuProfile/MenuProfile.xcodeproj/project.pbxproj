@@ -81,6 +81,8 @@
 		38DC6DB72A781A3E002E89D5 /* MenuProfile */ = {
 			isa = PBXGroup;
 			children = (
+				38DC6DB82A781A3E002E89D5 /* AppDelegate.swift */,
+				38DC6DBA2A781A3E002E89D5 /* SceneDelegate.swift */,
 				38DC6DCC2A781AF7002E89D5 /* src */,
 				38DC6DC12A781A40002E89D5 /* Assets.xcassets */,
 				38DC6DC32A781A40002E89D5 /* LaunchScreen.storyboard */,
@@ -94,8 +96,6 @@
 			children = (
 				38DC6DDA2A7829D3002E89D5 /* Service */,
 				38DC6DD12A781DF9002E89D5 /* JSON */,
-				38DC6DB82A781A3E002E89D5 /* AppDelegate.swift */,
-				38DC6DBA2A781A3E002E89D5 /* SceneDelegate.swift */,
 				38DC6DCD2A781B0D002E89D5 /* Home */,
 			);
 			path = src;
