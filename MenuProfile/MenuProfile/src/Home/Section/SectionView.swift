@@ -38,7 +38,8 @@ class SectionView: UIView {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.contentMode = .scaleAspectFit
-        image.backgroundColor = .cyan
+        image.tintColor = .cyan
+        image.backgroundColor = .clear
         return image
     }()
     

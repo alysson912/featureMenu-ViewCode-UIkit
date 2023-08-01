@@ -92,6 +92,20 @@ class HomeScreen: UIView {
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: bottomAnchor)
+       
         ])
+    }
+    public func insertRowsTableView(indexPath: [IndexPath], section: Int){
+        tableView.beginUpdates()
+        tableView.insertRows(at: indexPath, with: .fade)
+        tableView.reloadSections(IndexSet(integer: section), with: .none)
+        tableView.endUpdates()
+    }
+    
+    public func deleteRowsTableView(indexPath: [IndexPath], section: Int){
+        tableView.beginUpdates()
+        tableView.deleteRows(at: indexPath, with: .fade)
+        tableView.reloadSections(IndexSet(integer: section), with: .none)
+        tableView.endUpdates()
     }
 }

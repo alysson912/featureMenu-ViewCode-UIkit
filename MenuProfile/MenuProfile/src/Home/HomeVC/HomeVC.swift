@@ -51,7 +51,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.numberOfRowsInSection
+        return viewModel.numberOfRowsInSection(section: section)
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? { // passa uma view para que ela seja uma setion
@@ -65,7 +65,15 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     @objc func tapSection(_ sender: UIButton){
-        print(#function)
+        let section = sender.tag
+        
+        if viewModel.containsSection(section){
+            viewModel.tappedSection(type: .remove, section: section)
+            screen?.insertRowsTableView(indexPath: viewModel.indexPathForSection(section), section: section)
+        } else {
+            viewModel.tappedSection(type: .insert, section: section)
+            screen?.deleteRowsTableView(indexPath: viewModel.indexPathForSection(section), section: section)
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
