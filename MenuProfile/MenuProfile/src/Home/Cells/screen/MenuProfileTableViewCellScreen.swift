@@ -13,7 +13,7 @@ class MenuProfileTableViewCellScreen: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
-        label.font = UIFont.boldSystemFont(ofSize: 45)
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         return label
     }()
     

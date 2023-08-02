@@ -42,6 +42,7 @@ class HomeScreen: UIView {
         tableView.separatorStyle = .none // retirando linhas
         tableView.showsVerticalScrollIndicator = false // desativando scrool indicator
         // TO DO: Register
+        tableView.register(MenuProfileTableViewCell.self, forCellReuseIdentifier: MenuProfileTableViewCell.identifier)
         tableView.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
         // tableView.transform = CGAffineTransform(scaleX: 1, y: -1) // tableView Contraria/ append item de baixo pra cima
         return tableView
