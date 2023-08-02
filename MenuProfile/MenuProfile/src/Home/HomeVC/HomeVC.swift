@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeVC: UIViewController {
-
+    
     private var screen: HomeScreen?
     private let viewModel: MenuProfileViewModel = MenuProfileViewModel()
     
@@ -28,8 +28,8 @@ class HomeVC: UIViewController {
         viewModel.fetch(.request)
         
     }
-
-
+    
+    
 }
 
 extension HomeVC: MenuProfileViewModelDelegate {
@@ -77,7 +77,11 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: MenuProfileTableViewCell.identifier, for: indexPath) as? MenuProfileTableViewCell
+        cell?.setupCell(title: viewModel.titleCell(indexPath: indexPath))
+        
+        return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
