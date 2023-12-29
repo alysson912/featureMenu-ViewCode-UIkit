@@ -127,12 +127,12 @@
 			children = (
 				38DC6DDA2A7829D3002E89D5 /* Service */,
 				38DC6DD12A781DF9002E89D5 /* JSON */,
-				38DC6DCD2A781B0D002E89D5 /* Home */,
+				38DC6DCD2A781B0D002E89D5 /* Menu */,
 			);
 			path = src;
 			sourceTree = "<group>";
 		};
-		38DC6DCD2A781B0D002E89D5 /* Home */ = {
+		38DC6DCD2A781B0D002E89D5 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
 				385571C52A7AF3E2007CE743 /* Cells */,
@@ -142,7 +142,7 @@
 				38DC6DCE2A781B19002E89D5 /* HomeScreen */,
 				38776EC82A785B6D00397C88 /* HomeVC */,
 			);
-			path = Home;
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		38DC6DCE2A781B19002E89D5 /* HomeScreen */ = {
